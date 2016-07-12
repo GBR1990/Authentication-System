@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<link rel="stylesheet" href="loginDesign.css" />
+<script type="text/javascript" src="Validations.js">
+</script>
+</head>
+<body>
+<img src="welcome.jpg" alt="Welcome Image" style="width:750px;height:228px;">
+<div class="container">
+<form name="loginform" action="login" method="post" onsubmit="return validate();">
+	User ID:<input type="text" name="userId" /><br>
+	Password:<input type="password" name="password"/><br>
+	<input type="submit" value="Login"/><br>
+	</form>
+	<br>
+	</div>
+	
+	
+	<form action="create.jsp" method="post">
+	New User <br><input type="submit" value="Register">
+	</form>
+	If you are re-directed to this page, you need to register.
+
+</body>
+</html>
