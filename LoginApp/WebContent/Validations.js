@@ -4,9 +4,9 @@ function validate()
 	var uname=document.forms["loginform"]["userId"].value;
 	var password=document.forms["loginform"]["password"].value;
 
-if (uname=="" || uname ==null)
+if (uname=="" || uname ==null||(/\D/.test(uname)))
 	{
-	alert("user id is required");
+	alert("Please enter a valid user id");
 	return false;
 	}
 else if (password=="" || password ==null)
